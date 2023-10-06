@@ -73,15 +73,17 @@ const selectedIcon = localStorage.getItem("selected-icon");
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
-  document.body.classList.contains(iconTheme) ? "fa-solid fa-moon" : "fa-solid fa-sun";
+  document.body.classList.contains(iconTheme)
+    ? "fa-solid fa-moon"
+    : "fa-solid fa-sun";
 
 if (selectedTheme) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
   );
-  themeButton.classList[selectedTheme === "fa-solid fa-moon" ? "add" : "remove"](
-    iconTheme
-  );
+  themeButton.classList[
+    selectedTheme === "fa-solid fa-moon" ? "add" : "remove"
+  ](iconTheme);
 }
 
 themeButton.addEventListener("click", () => {
@@ -89,4 +91,19 @@ themeButton.addEventListener("click", () => {
   themeButton.classList.toggle(iconTheme);
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+});
+
+const listItems = document.querySelectorAll(".newlist li");
+
+listItems.forEach((item) => {
+  item.addEventListener("touchstart", function () {
+    // Add your desired hover effect here
+    this.style.width = "180px";
+    // Add other effects as needed
+  });
+  item.addEventListener("touchend", function () {
+    // Reset the element to its original state
+    this.style.width = "60px";
+    // Reset other effects as needed
+  });
 });

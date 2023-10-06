@@ -723,7 +723,7 @@ p {
     align-items: center;
     flex-direction: column;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .newlist li:hover {
@@ -738,7 +738,7 @@ p {
     border-radius: 50px;
     background: linear-gradient(135deg, var(--i), var(--j), var(--k));
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .newlist li:hover::before {
@@ -766,13 +766,13 @@ p {
 .newlist li i {
     color: #777;
     font-size: 1.75rem !important;
-    transition-delay: 0.25s;
+    transition-delay: 0.1s;
 }
 
 .newlist li:hover i {
     transform: scale(0);
     font-size: 1.75rem;
-    transition-delay: 0.25s;
+    transition-delay: 0.1s;
 }
 
 .newlist li span {
@@ -785,12 +785,12 @@ p {
     letter-spacing: 0.1rem;
     transform: scale(0);
     transition: .5s;
-    transition-delay: 0s;
+    transition-delay: 0.1s;
 }
 
 .newlist li:hover .titulo {
     transform: scale(1);
-    transition-delay: 0.25s;
+    transition-delay: 0.1s;
 }
 
 @media screen and (max-width: 350px) {
