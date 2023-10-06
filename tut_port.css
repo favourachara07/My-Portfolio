@@ -869,6 +869,6 @@ p {
     .contactme,
     .skills,
     .services {
-        width: 414px;
+        max-width: 100%;
     }
 }
