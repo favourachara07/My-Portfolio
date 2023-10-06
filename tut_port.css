@@ -852,11 +852,23 @@ p {
     }
 
 }
+
 /* @media screen and (min-width: 568px) {
     .home_data{
         position: relative;
         right: -60px;
         bottom: 10px;
     }
+
     .a
 } */
+@media screen and (min-width:414px) {
+
+    .home,
+    .about,
+    .contactme,
+    .skills,
+    .services {
+        width: 414px;
+    }
+}
