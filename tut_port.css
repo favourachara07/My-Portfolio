@@ -658,15 +658,19 @@ p {
 .contact_icon-what {
     color: rgba(83, 211, 94, 0.651);
 }
-.contact_icon-insta{
+
+.contact_icon-insta {
     color: #d62976;
 }
-.contact_icon-git{
+
+.contact_icon-git {
     color: black;
 }
-.contact_icon-tw{
+
+.contact_icon-tw {
     color: #08a0e9;
 }
+
 /* .contact_title {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
@@ -700,14 +704,14 @@ p {
     flex-direction: column;
 }
 
-ul {
+.newlist {
     position: relative;
     display: flex;
     gap: 25px;
     flex-direction: column;
 }
 
-ul li {
+.newlist li {
     position: relative;
     list-style: none;
     width: 60px;
@@ -722,12 +726,12 @@ ul li {
     transition: 0.5s;
 }
 
-ul li:hover {
+.newlist li:hover {
     width: 180px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-ul li::before {
+.newlist li::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -737,11 +741,11 @@ ul li::before {
     transition: 0.5s;
 }
 
-ul li:hover::before {
+.newlist li:hover::before {
     opacity: 1;
 }
 
-ul li::after {
+.newlist li::after {
     content: '';
     position: absolute;
     top: 10px;
@@ -754,23 +758,28 @@ ul li::after {
     z-index: -1;
     filter: blur(15px);
 }
-ul li:hover::after {
+
+.newlist li:hover::after {
     opacity: 0.5;
 }
-ul li i{
+
+.newlist li i {
     color: #777;
     font-size: 1.75rem !important;
     transition-delay: 0.25s;
 }
-ul li:hover i {
+
+.newlist li:hover i {
     transform: scale(0);
     font-size: 1.75rem;
     transition-delay: 0.25s;
 }
-ul li span{
+
+.newlist li span {
     position: absolute;
 }
-ul li .titulo{
+
+.newlist li .titulo {
     color: #fff;
     font-size: 1.1em !important;
     letter-spacing: 0.1rem;
@@ -778,10 +787,12 @@ ul li .titulo{
     transition: .5s;
     transition-delay: 0s;
 }
-ul li:hover .titulo{
+
+.newlist li:hover .titulo {
     transform: scale(1);
     transition-delay: 0.25s;
 }
+
 @media screen and (max-width: 350px) {
     .container {
         margin-left: var(--mb-1);
@@ -795,10 +806,30 @@ ul li:hover .titulo{
     /* .home_content{
         grid-template-columns: .25fr 3fr;
     } */
+    .home {
+        width: 350px;
+    }
+
+    .about {
+        width: 350px;
+    }
+
+    .contactme {
+        width: 350px;
+    }
+
+    .services {
+        width: 350px;
+    }
+
     .home_blob {
         width: 180px;
     }
-    
+
+    .skills {
+        width: 350px;
+    }
+
     .about_desc {
         font-size: 1rem;
     }
@@ -821,3 +852,11 @@ ul li:hover .titulo{
     }
 
 }
+/* @media screen and (min-width: 568px) {
+    .home_data{
+        position: relative;
+        right: -60px;
+        bottom: 10px;
+    }
+    .a
+} */
