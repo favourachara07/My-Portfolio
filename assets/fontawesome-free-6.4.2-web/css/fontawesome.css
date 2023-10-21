@@ -819,7 +819,8 @@ readers do not read off random characters that represent icons */
   content: "\e51c"; }
 
 .fa-pencil::before {
-  content: "\f303"; }
+  /* content: "\f303"; */
+  }
 
 .fa-pencil-alt::before {
   content: "\f303"; }
