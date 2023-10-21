@@ -151,7 +151,8 @@ img {
     transition: .3s;
 }
 
-.section_title:hover,.section_subtitle:hover {
+.section_title:hover,
+.section_subtitle:hover {
     color: #176317;
     height: 100%;
 }
@@ -263,7 +264,7 @@ img {
 
 }
 
-.home {
+/* .home {
     background-image: url('assets/pexels-henry-&-co-1939485.jpg');
     background-position: center;
     background-size: cover;
@@ -272,6 +273,10 @@ img {
     color: #176317;
     font-weight: bold;
     /* max-width: 100%; */
+hr {
+    margin: 0;
+    height: .5px;
+    color: #176317;
 }
 
 .home_subtitle,
@@ -279,27 +284,27 @@ img {
     text-shadow: 1px 0px 2px hsla(120, 97%, 14%, 0.11);
 }
 
-.skills {
+/* .skills {
     background-image: url('assets/pexels-henry-&-co-1939485.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
-}
+} */
 
 .about,
 .services {
     background: linear-gradient(hsla(129, 65%, 25%, 0.767), rgba(3, 59, 27, 0.815));
 }
 
-.contactme {
+/* .contactme {
     background-image: url('assets/pexels-henry-&-co-1939485.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     padding-bottom: 0px;
     margin-bottom: 0px;
-}
+} */
 
 /* I am a freelance web developer with skills in Python and web development. I have some experience in building portfolio and e-commerce websites for various clients. I can create responsive, user-friendly and secure websites using modern frameworks and tools. I can also handle backend development, database integration and deployment. I am looking for web development projects that match my skills and interests. I am reliable, communicative and deadline-oriented. My hourly rate is $25, but I am open to negotiation depending on the project scope and complexity. If you are interested in working with me, please contact me with your project details and budget. */
 
@@ -783,7 +788,7 @@ p {
     opacity: 1;
 }
 
-/* .newlist li::after {
+.newlist li::after {
     content: '';
     position: absolute;
     top: 10px;
@@ -795,11 +800,11 @@ p {
     transition: .3s;
     z-index: -1;
     filter: blur(15px);
-} */
+}
 
-/* .newlist li:hover::after {
+.newlist li:hover::after {
     opacity: 0.5;
-} */
+}
 
 .contact_icon-what,
 .contact_icon-insta,
@@ -906,20 +911,27 @@ input {
     .newcontact {
         display: block;
     }
-    
-    input{
+
+    input {
         width: 15rem;
     }
 
-    .newlist{
+    .newlist {
         display: flex;
         flex-direction: row;
+        margin-bottom: 20px;
     }
-    .newlist li{
-        width: 30px;
+
+    .newlist li {
+        width: 7px;
     }
-    .newlist li:hover{
-        transform: translate(180deg );
+
+
+}
+
+@media screen and (min-width: 351px) {
+    .newcontact{
+        display: block;
     }
 
 }
@@ -940,6 +952,14 @@ input {
     .contact_container {
         grid-template-columns: repeat(2, 1fr);
     }
+        .newcontact {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            min-height: 20vh;
+            flex-direction: column;
+            grid-template-columns: repeat(2, 18.75rem);
+        }
 
 }
 
